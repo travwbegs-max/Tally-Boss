@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tally Master</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <div class="top-bar">
+
+      <h1>Tally Master</h1>
+
+      <button id="darkModeBtn">
+        🌙
+      </button>
+
+    </div>
+
+    <div id="chartTabs"></div>
+
+    <div class="controls">
+
+      <input
+        type="text"
+        id="chartNameInput"
+        placeholder="New Chart Name"
+      >
+
+      <button onclick="createChart()">
+        Create Chart
+      </button>
+
+      <input
+        type="text"
+        id="personNameInput"
+        placeholder="Person Name"
+      >
+
+      <button onclick="addPerson()">
+        Add Person
+      </button>
+
+      <button class="delete-chart"
+        onclick="deleteChart()">
+        Delete Current Chart
+      </button>
+
+    </div>
+
+    <div id="peopleContainer"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
