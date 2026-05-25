@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  color: black;
+}
+
+body.dark {
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #2563eb;
+}
+
+#darkModeBtn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 999px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#chartTabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.chart-tab {
+  background: #93c5fd;
+  color: white;
+  border-radius: 999px;
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.chart-tab.active {
+  background: #2563eb;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-chart {
+  background: #dc2626;
+}
+
+.person-card {
+  background: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+body.dark .person-card {
+  background: #1e293b;
+}
+
+.person-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.person-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tally-bubble {
+  background: #dbeafe;
+  border-radius: 999px;
+  padding: 20px;
+  margin: 15px 0;
+  overflow-x: auto;
+}
+
+.tally-text {
+  color: #2563eb;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.minus-btn {
+  background: #60a5fa;
+}
+
+.plus-btn {
+  background: #2563eb;
+}
+
+.winner {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
